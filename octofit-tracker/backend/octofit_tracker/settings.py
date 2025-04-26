@@ -38,7 +38,9 @@ MIDDLEWARE += [
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['literate-winner-779xw46646fp7gg-8000.app.github.dev', 'localhost']
+
+ROOT_URLCONF = 'octofit_tracker.urls'
 
 TEMPLATES = [
     {
@@ -57,3 +59,5 @@ TEMPLATES = [
 ]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+SECRET_KEY = 'octofit_secret_key_12345'
